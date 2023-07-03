@@ -15,7 +15,7 @@ data.loc[(data['feature1'] == 'aa') & (data['feature2'] > 2)].sort_values('featu
 ```
 
 ```python
-# unique()!!
+# nunique()!!
 data.loc[(data['feature1'] == 'bb') & (data['feature2'].str.contains('aws'))].groupby('yyyymmdd').target.nunique().reset_index(name = 'result')
 ```
 # merge
